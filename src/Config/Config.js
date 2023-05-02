@@ -3,8 +3,6 @@ export const clientId = process.env.REACT_APP_CLIENT_ID;
 export const liveURL = process.env.REACT_APP_LIVE_URL;
 export const devURL = 'https://localhost:5173/';
 export const redirectURL = process.env.NODE_ENV === 'production' ? liveURL : devURL;
-
-
 export const scopes = [
     'playlist-read-collaborative',
     'playlist-modify-public',
@@ -25,4 +23,6 @@ export const scopes = [
     'user-follow-modify',
     'user-follow-read',
     'user-read-recently-played'
-    ];    
+    ];
+
+export const accesUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURL}&scope=${scopes.join('%20')}$response_type=token&show_dialog=true`;
