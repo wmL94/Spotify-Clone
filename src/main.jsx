@@ -5,7 +5,7 @@ import './index.css'
 import SpotifyWebApi from 'spotify-web-api-node';
 import {redirectURL} from './config/config';
 import { ThemeProvider } from '@mui/system';
-import { themeOptions } from './Theme/Material-theme';
+import { themeOptions } from './theme/material-theme';
 
 const spotifyApi = new SpotifyWebApi({
   clientId: import.meta.env.VITE_CLIENT_ID,
