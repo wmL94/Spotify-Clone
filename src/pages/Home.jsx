@@ -12,7 +12,7 @@ const Home = () => {
 				gap: 5
 			}}
 		>
-			<img src="/hero.jpg" style={{ maxHeight: '25%', maxWidth: '25%' }} alt="William Lundgren" />
+			<img src="/hero.jpg" style={{ maxHeight: '50%', maxWidth: '50%' }} alt="William Lundgren" />
 			<Button
 				size="large"
 				variant="contained"
